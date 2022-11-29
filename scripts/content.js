@@ -1,16 +1,25 @@
-var wordsJson = {
-    "words": ["are", "were", "been", "have", "has", "had", "she", "he", "its", "war"]
-}
+// Create a button to call function "autoComplete"
+let btn = document.createElement("button");
+btn.innerHTML = "Auto Complete";
+btn.type = "button";
+btn.id = "autoCompleteBtn";
+document.getElementById('inGrp').appendChild(btn);
 
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    if(changeInfo.status === 'complete') {
-        for (var key in wordsJson) {
-            console.log("test ", key);
-            for (var key1 in wordsJson[key]) {
-                document.getElementById('userGuess').value = wordsJson[key][key1];
-                document.getElementById('submitGuess').click();
-                console.log(wordsJson[key][key1]);
-            }
-        }        
+// Add event listener to the button
+btn.addEventListener("click", autoComplete);
+
+// Function to auto complete the form
+function autoComplete() {
+    var wordsJson = {
+        "words": ["are", "were", "been", "have", "has", "had", "she", "he", "its", "war"]
     }
-})
+
+    for (var key in wordsJson) {
+        console.log("test ", key);
+        for (var key1 in wordsJson[key]) {
+            document.getElementById('userGuess').value = wordsJson[key][key1];
+            document.getElementById('submitGuess').click();
+            console.log(wordsJson[key][key1]);
+        }
+    }
+}
