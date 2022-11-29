@@ -12,5 +12,8 @@
                 "https://www.redactle.com/*"
             ]
         }
-    ]
+    ],
+    "icons": {
+        "128": "icons/Logo128.png"
+    }
 }
