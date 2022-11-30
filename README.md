@@ -1,4 +1,7 @@
-![](icons/Logo128.png)
+<p align="center">
+  <img src="icons/Logo128.png" alt="Sublime's custom image"/>
+</p>
+
 # Auto_Redacte
 
 ---
