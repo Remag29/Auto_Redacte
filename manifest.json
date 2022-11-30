@@ -13,6 +13,12 @@
             ]
         }
     ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "words_list.json" ],
+            "matches": ["https://www.redactle.com/*"]
+        }
+    ],
     "icons": {
         "128": "icons/Logo128.png"
     }
