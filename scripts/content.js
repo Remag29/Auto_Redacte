@@ -2,6 +2,7 @@
 let btn = document.createElement("button");
 btn.innerHTML = "Auto Complete";
 btn.type = "button";
+btn.setAttribute("class", "btn btn-outline-secondary");
 btn.id = "autoCompleteBtn";
 document.getElementById('inGrp').appendChild(btn);
 
