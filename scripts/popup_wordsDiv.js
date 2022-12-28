@@ -10,6 +10,7 @@ fetch(wordsJson)
             for (var key1 in json[key]) {
                 i++;
                 var div = document.createElement("div");
+                div.className = 'word';
                 div.innerHTML = (i + 1) + ': ' + json[key][key1];
                 mainContainer.appendChild(div);
             }
