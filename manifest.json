@@ -21,5 +21,10 @@
     ],
     "icons": {
         "128": "icons/Logo128.png"
+    },
+    "action": {
+        "default_icon": "icons/Logo128.png",
+        "default_title": "AutoRedactle",
+        "default_popup": "popup/popup.html"
     }
 }
