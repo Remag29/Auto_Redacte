@@ -9,10 +9,26 @@ fetch(wordsJson)
         for (var key in json) {
             for (var key1 in json[key]) {
                 i++;
-                var div = document.createElement("div");
-                div.className = 'word';
-                div.innerHTML = (i + 1) + ': ' + json[key][key1];
-                mainContainer.appendChild(div);
+                // Create word div
+                var divParent = document.createElement("div");
+                divParent.className = 'word';
+
+                // Create word text div
+                var divText = document.createElement("div");
+                divText.className = 'word_text';
+                divText.innerHTML = (i + 1) + ': ' + json[key][key1];
+
+                // Create delete button
+                var dltBtn = document.createElement("button");
+                dltBtn.className = 'delete_btn';
+                dltBtn.innerHTML = 'X';
+
+                // Append word text and delete button to word div
+                divParent.appendChild(divText);
+                divParent.appendChild(dltBtn);
+
+                // Append word div to the page
+                mainContainer.appendChild(divParent);
             }
         }
     });
