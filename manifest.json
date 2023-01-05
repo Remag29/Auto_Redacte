@@ -4,7 +4,8 @@
     "version": "1.0.0",
     "description": "Auto complete redactle guess with defined list of words",
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage"
     ],
     "content_scripts": [
         {
