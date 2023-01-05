@@ -84,9 +84,8 @@ h1 {
 
 #words_list {
     position: relative;
-    height: calc(100% - 10px);
+    height: 100%;
     width: calc(100% - 40px);
-    top: 10px;
     left: 20px;
     display: flex;
     flex-direction: column;
