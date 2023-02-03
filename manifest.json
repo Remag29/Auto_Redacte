@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "AutoRedactle",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Auto complete redactle guess with defined list of words",
     "permissions": [
         "activeTab",
