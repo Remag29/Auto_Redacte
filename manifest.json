@@ -3,10 +3,15 @@
     "name": "AutoRedactle",
     "version": "1.0.0",
     "description": "Auto complete redactle guess with defined list of words",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
     "content_scripts": [
         {
             "js": [
-                "scripts/content.js"
+                "scripts/content.js",
+                "scripts/popup_wordsDiv.js"
             ],
             "matches": [
                 "https://www.redactle.com/*"
@@ -15,8 +20,12 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": [ "words_list.json" ],
-            "matches": ["https://www.redactle.com/*"]
+            "resources": [
+                "words_list.json"
+            ],
+            "matches": [
+                "https://www.redactle.com/*"
+            ]
         }
     ],
     "icons": {
