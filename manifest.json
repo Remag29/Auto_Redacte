@@ -20,6 +20,7 @@
     ],
     "web_accessible_resources": [
         {
+            "resources": [],
             "matches": [
                 "https://www.redactle.com/*"
             ]
